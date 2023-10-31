@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Character Quiz</h1>
+    <p>Current Character: <span id="question">A</span></p>
+    <div id="characterImageContainer">
+        <img id="characterImage" src="" alt="Character Image" width="200">
+    </div>
+    
+    <div id="options">
+        <button onclick="checkAnswer('Tank')">Tank</button>
+        <button onclick="checkAnswer('Damage')">Damage</button>
+        <button onclick="checkAnswer('Supporter')">Supporter</button>
+    </div>
+    
+    <p id="score">Score: 0</p>
+    
+    <div style="margin-top: 20px;">
+        <button id="restartButton" onclick="restartGame()">Restart</button>
+    </div>
+    <div id="feedback"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize the game on page load
+        restartGame();
+    </script>
+</body>
+</html>
